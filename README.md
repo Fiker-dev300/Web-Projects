@@ -1,2 +1,2 @@
 # Web-Projects
-poster about missing puppies
+Collection of projects
