@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+    background: #ffffff;
+    color: #1d1d1f;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.outer-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.internal-wrapper {
+    width: 980px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header-wrapper {
+    background: rgba(255, 255, 255, 0.92);
+    height: 44px;
+    font-size: 14px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+.nav-internal-wrapper {
+    width: 1180px;
+}
+
+.header-wrapper ul {
+    height: 44px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper .header-links-wrapper ul li {
+    display: inline-block;
+    opacity: 0.82;
+}
+
+.header-wrapper .header-links-wrapper ul li:hover {
+    opacity: 1;
+}
+
+.header-wrapper .header-links-wrapper ul li a {
+    text-decoration: none;
+    color: #1d1d1f;
+    line-height: 44px;
+    white-space: nowrap;
+}
+
+.logo-link,
+.search-link,
+.cart-link {
+    width: 20px;
+}
+
+.logo-link img,
+.search-link img,
+.cart-link img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    margin: 13px auto;
+}
+
+.cart-link img {
+    width: 17px;
+    height: 20px;
+    margin-top: 12px;
+}
+
+.hero-section {
+    min-height: 736px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    background: #f5f5f7;
+    margin-bottom: 12px;
+}
+
+.section-image {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    margin: 0;
+    display: block;
+}
+
+.section-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.section-content,
+.tile-content {
+    position: relative;
+    z-index: 2;
+}
+
+.top-content {
+    padding-top: 72px;
+}
+
+.product-title,
+.title-wrapper {
+    font-size: 72px;
+    font-weight: 700;
+    letter-spacing: -0.055em;
+    line-height: 1.05;
+}
+
+.brief-description,
+.description-wrapper {
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin-top: 8px;
+}
+
+.links-wrapper,
+.button-links-wrapper {
+    margin-top: 24px;
+}
+
+.links-wrapper ul {
+    list-style: none;
+}
+
+.links-wrapper ul li {
+    display: inline-block;
+}
+
+.links-wrapper ul li a,
+.blue-button,
+.outline-button {
+    display: inline-block;
+    border-radius: 980px;
+    text-decoration: none;
+    font-size: 19px;
+    line-height: 1;
+    margin: 0 6px;
+}
+
+.links-wrapper ul li a,
+.blue-button {
+    background: #0071e3;
+    color: #ffffff;
+    padding: 14px 26px;
+    border: 1px solid #0071e3;
+}
+
+.links-wrapper ul li a:hover,
+.blue-button:hover {
+    background: #0077ed;
+}
+
+.outline-button {
+    color: #0071e3;
+    border: 1px solid #0071e3;
+    padding: 14px 25px;
+}
+
+.outline-button:hover {
+    background: #0071e3;
+    color: #ffffff;
+}
+
+.main-highlight-wrapper .section-image img,
+.apple-college-wrapper .section-image img,
+.second-hightlight-wrapper .section-image img {
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.second-hightlight-wrapper {
+    min-height: 780px;
+}
+
+.two-column-wrapper {
+    display: flex;
+    gap: 12px;
+    padding: 0 12px 12px;
+    background: #ffffff;
+}
+
+.left-side-wrapper,
+.right-side-wrapper {
+    width: 50%;
+}
+
+.promo-tile {
+    height: 580px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    background: #f5f5f7;
+}
+
+.promo-tile .section-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.tile-content {
+    padding: 38px 20px 0;
+}
+
+.title-wrapper-small {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.045em;
+}
+
+.description-wraper {
+    font-size: 26px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    margin-top: 6px;
+}
+
+.logo-title,
+.ipad-logo-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 58px;
+}
+
+.logo-title img {
+    height: 49px;
+    width: auto;
+}
+
+.ipad-logo-title img {
+    height: 48px;
+    width: auto;
+}
+
+.small-button {
+    font-size: 17px;
+    padding: 12px 22px;
+}
+
+.outline-button.small-button {
+    padding: 12px 21px;
+}
+
+.dark-tile {
+    background: #000000;
+}
+
+.light-text {
+    color: #ffffff;
+}
+
+.light-outline {
+    color: #2997ff;
+    border-color: #2997ff;
+}
+
+.light-outline:hover {
+    background: #2997ff;
+    color: #ffffff;
+}
+
+.fourth-highlight-wrapper .left-side-wrapper .section-image img,
+.fourth-highlight-wrapper .right-side-wrapper .section-image img,
+.sixth-highlight-wrapper .left-side-wrapper .section-image img,
+.sixth-highlight-wrapper .right-side-wrapper .section-image img {
+    object-position: center bottom;
+}
+
+.fifth-highlight-wrapper .left-side-wrapper .section-image img,
+.fifth-highlight-wrapper .right-side-wrapper .section-image img {
+    object-position: center center;
+}
+
+.entertainment-wrapper {
+    background: #f5f5f7;
+    padding: 36px 0 18px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.entertainment-wrapper h2 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.055em;
+    margin-bottom: 28px;
+}
+
+.entertainment-slider {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+    transform: translateX(-240px);
+}
+
+.entertainment-card {
+    width: 1250px;
+    height: 668px;
+    overflow: hidden;
+    flex: 0 0 auto;
+    background: #000;
+}
+
+.entertainment-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 0 8px;
+}
+
+.slider-dots span {
+    width: 11px;
+    height: 11px;
+    background: #8b8b8d;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.slider-dots .active-dot {
+    width: 42px;
+    border-radius: 20px;
+    background: #000000;
+}
+
+.card-carousel-wrapper {
+    background: #f5f5f7;
+    padding: 16px 0 20px;
+    overflow: hidden;
+}
+
+.card-carousel {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+    transform: translateX(-80px);
+}
+
+.small-entertainment-card {
+    width: 417px;
+    height: 226px;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.small-entertainment-card.wide-card {
+    width: 469px;
+    height: 264px;
+}
+
+.small-entertainment-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-wrapper {
+    background-color: #f5f5f7;
+    color: #6e6e73;
+    font-size: 12px;
+    line-height: 1.35;
+}
+
+.footer-internal-wrapper {
+    width: 980px;
+}
+
+.upper-text-container {
+    border-bottom: 1px solid #d2d2d7;
+    padding: 17px 0 11px;
+}
+
+.upper-text-container p {
+    margin-bottom: 10px;
+}
+
+.footer-links-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.footer-links-wrapper > div {
+    width: 18%;
+}
+
+.footer-wrapper ul {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.footer-wrapper ul li {
+    padding: 4px 0;
+}
+
+.footer-links-wrapper a,
+.my-apple-wrapper a,
+.footer-links-terms a {
+    color: #515154;
+    text-decoration: none;
+}
+
+.footer-links-wrapper a:hover,
+.my-apple-wrapper a:hover,
+.footer-links-terms a:hover {
+    text-decoration: underline;
+}
+
+.footer-links-wrapper h3 {
+    color: #1d1d1f;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.my-apple-wrapper {
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.copyright-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 0 20px;
+}
+
+.footer-links-terms ul li {
+    display: inline-block;
+    padding: 0 8px;
+    border-right: 1px solid #ccc;
+}
+
+.footer-links-terms ul li:last-child {
+    border-right: 0;
+}
+
+.footer-country {
+    white-space: nowrap;
+}
+
+@media (max-width: 1180px) {
+    .nav-internal-wrapper {
+        width: 100%;
+        padding: 0 22px;
+    }
+}
+
+@media (max-width: 900px) {
+    .internal-wrapper,
+    .footer-internal-wrapper {
+        width: 100%;
+    }
+
+    .header-wrapper li:nth-child(n+4):nth-child(-n+12) {
+        display: none;
+    }
+
+    .product-title,
+    .title-wrapper {
+        font-size: 48px;
+        letter-spacing: -0.035em;
+    }
+
+    .brief-description,
+    .description-wrapper {
+        font-size: 24px;
+    }
+
+    .hero-section {
+        min-height: 590px;
+    }
+
+    .two-column-wrapper,
+    .footer-links-wrapper,
+    .copyright-wrapper {
+        flex-direction: column;
+    }
+
+    .left-side-wrapper,
+    .right-side-wrapper,
+    .footer-links-wrapper > div {
+        width: 100%;
+    }
+
+    .promo-tile {
+        height: 520px;
+    }
+
+    .title-wrapper-small {
+        font-size: 40px;
+    }
+
+    .description-wraper {
+        font-size: 21px;
+    }
+
+    .entertainment-wrapper h2 {
+        font-size: 44px;
+    }
+
+    .entertainment-card {
+        width: 760px;
+        height: 406px;
+    }
+
+    .entertainment-slider {
+        transform: translateX(-220px);
+    }
+}
