@@ -1,0 +1,99 @@
+/*Fiker Teferi AJ1597*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  background-color: #023859;
+  color: white;
+  text-align: center;
+  padding: 2%;
+  font-size: 2.5vw;
+}
+
+/* Moblie */
+.center {
+  padding: 20px;
+}
+
+.center div {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+.center img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#middle {
+  display: none;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* On mobile the default is stacked) */
+.col-third,
+.col-half {
+  width: 100%;
+}
+
+/* Tablet & Desktop */
+@media only screen and (min-width: 768px) {
+  .center {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 36px 20px;
+  }
+
+  .col-third {
+    flex: 1 1 calc(33.333% - 20px);
+  }
+
+  .col-third img {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+  }
+
+  .pink-box {
+    background-color: #e85d75;
+    height: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #middle {
+    display: block;
+    font-size: 4vw;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+  }
+
+  .full {
+    width: 100%;
+    font-size: 3vw;
+    margin: 30px 0 20px;
+    text-align: center;
+  }
+
+  .col-half {
+    flex: 1 1 calc(50% - 20px);
+  }
+
+  .col-half img {
+    width: 100%;
+    height: auto;
+  }
+}
