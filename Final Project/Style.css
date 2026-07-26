@@ -1,3 +1,5 @@
+
+Style · CSS
 *{
     margin: 0;
     padding: 0;
@@ -22,25 +24,25 @@ html {
     align-items: center;
     z-index: 100;
 }
-
+ 
 .logo{
     color: white;
     font-weight: 600;
     font-size: 25px;
     transition: 0.3s ease;
 }
-
+ 
 .logo:hover{
     color: orangered;
     text-shadow: 0 0 25px orangered, 
                  0 0 50px orangered;
     transform: scale(1.1);
 }
-
+ 
 span{
     color: orangered;
 }
-
+ 
 .navbar a{
     color: white;
     font-size: 18px;
@@ -49,13 +51,13 @@ span{
     border-bottom: 3px solid transparent;
     transition: 0.3s ease;
 }
-
+ 
 .navbar a:hover,
 .navbar a.active{
     color: orangered;
     border-bottom: 3px solid orangered; 
 }
-
+ 
 .contact{
     color: black;
     font-size: 16px;
@@ -184,7 +186,7 @@ span{
     color: white;
     margin: 2em 0 3em;
 }
-
+ 
 .contact-form{
     min-height: 100vh;
     padding-top: 120px;
@@ -275,7 +277,7 @@ span{
     font-size: 12px;
     margin-top: 15px;
 }
-
+ 
 /* SKILLS SECTION */
 .skills{
     min-height: 100vh;
@@ -334,7 +336,7 @@ span{
     font-size: 14px;
     font-weight: 600;
 }
-
+ 
 /* PROJECTS SECTION */
 .projects{
     min-height: 100vh;
@@ -395,3 +397,84 @@ span{
 .project-links a:hover{
     text-decoration: underline;
 }
+ 
+/* ================= RESPONSIVE ================= */
+ 
+@media (max-width: 991px){
+    .home,
+    .education{
+        flex-direction: column;
+        gap: 3em;
+        padding: 140px 8% 60px;
+        text-align: center;
+    }
+    .home-content{
+        max-width: 100%;
+    }
+    .home-content h1{
+        font-size: 46px;
+    }
+    .home-content h3{
+        font-size: 32px;
+    }
+    .btn-box{
+        width: 100%;
+        justify-content: center;
+    }
+    .img-box img,
+    .about-img img{
+        width: 320px;
+    }
+    .about-content h3{
+        font-size: 42px;
+    }
+}
+ 
+@media (max-width: 768px){
+    .header{
+        flex-wrap: wrap;
+        padding: 15px 6%;
+        row-gap: 12px;
+    }
+    .navbar{
+        width: 100%;
+        order: 3;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.5em 1em;
+    }
+    .navbar a{
+        margin: 0;
+        font-size: 16px;
+    }
+    .contact{
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+    .skills-container,
+    .projects-container{
+        grid-template-columns: 1fr;
+    }
+    .skills,
+    .projects{
+        padding: 140px 6% 60px;
+    }
+}
+ 
+@media (max-width: 480px){
+    .home-content h1{
+        font-size: 34px;
+    }
+    .home-content p{
+        font-size: 16px;
+    }
+    .img-box img,
+    .about-img img{
+        width: 240px;
+    }
+    .contact-form form .input-box{
+        flex-direction: column;
+    }
+}
+ 
